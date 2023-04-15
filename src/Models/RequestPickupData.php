@@ -11,7 +11,7 @@ class RequestPickupData extends ModelBase
     public string      $name;            // string(max:50)	false	Nama pengirim paket
     public string      $zipcode;         // string(max:5)	true	Kode pos pengirim
     public int         $kecamatan_id;    // integer	false	Kecamatan id pengirim
-    public PackageData $packages;        // PackageData of array(min:1 object)	false	Lihat penyusunan list paket berikut
+    public array       $packages;        // PackageData of array(min:1 object)	false	Lihat penyusunan list paket berikut
     public string      $schedule;        // string	false	Lihat bagian #Pickup Schedules
     public ?string     $platform_name = null;
 }
